@@ -21,3 +21,50 @@
  * concat
  */
 
+function isTrue(input){
+    return input === true;
+}
+
+function isFalse(input){
+    return input === false;
+}
+
+function not(input){
+    let notInput = !(input);
+    return notInput;
+}
+
+function addOne(input){
+    let addedOne = Number(input) + 1 || input + 1;
+    return addedOne;
+}
+
+function isEven(input){
+    let evenInput = input % 2 == 0;
+    return evenInput;
+}
+
+function isIdentical(input1, input2){
+    let identicalInput = input1 === input2;
+    return identicalInput;
+}
+
+function isEqual(input1, input2) {
+    let equalInput = input1 == input2;
+    return equalInput;
+}
+
+function or(input1, input2){
+    let resultOr = input1 || input2;
+    return resultOr;
+}
+
+function and(input1, input2){
+    let resultAnd = input1 && input2;
+    return resultAnd;
+}
+
+function concat(input1, input2){
+    let resultConcat = input1 + "" + input2;
+    return resultConcat;
+}
